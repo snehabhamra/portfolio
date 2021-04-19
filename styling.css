@@ -21,11 +21,15 @@ html {
     font-stretch: 100%;
 }
 
+span {
+    text-decoration: line-through;
+    font-style: italic;
+}
 
 /*added a contact page link as part of slogan - lets connect*/
 #link {
     color: #c7d5eb;
-    text-decoration: underline;
+    text-decoration: none;
     margin-right: 10px;
     text-align: center;
     font-size: 35px;
@@ -50,7 +54,7 @@ html {
     src: url(https://fonts.gstatic.com/s/inconsolata/v21/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRL2kXWdycuJDETf.woff) format('woff');
 }
 #link:hover {
-    color: black;
+    color: #c7d5eb;
     text-decoration: none;
     margin-right: 10px;
     text-align: center;
@@ -337,4 +341,58 @@ img.icons {
     background-size: 100%;
     padding: 20px;
     border-style: dotted;
+}
+
+.competencies_headings {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*contact us page styling */
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: lem;
+    border: 2px solid black;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    top: 50px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    float:inline-start;
+    flex-direction: column;
+    
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+
+ form  {
+    font-family: monospace;
+    border-radius: 1rem;
+    padding: 50px;
+    position: relative;
+}
+
+form li #msg {
+    width: 300px;
+    box-sizing: border-box;
+    font-family: monospace;
+    height: 200px;
+    max-width: 100%;
+    position: relative;
+} 
+
+.resume {
+    text-decoration: none;
+    color: #c7d5eb;
+    float: center; 
+    max-width: 100%;
 }

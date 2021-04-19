@@ -207,14 +207,3 @@ img.icons {
 /*contact page syntax for webform styling*/
 
 
-.contact {
-    position: relative;
-    min-height: 100vh;
-    padding:50px 100px;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: inconsolate, monospace;
-    color:white;
-}
