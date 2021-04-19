@@ -24,8 +24,8 @@ html {
 
 /*added a contact page link as part of slogan - lets connect*/
 #link {
-    color: black;
-    text-decoration: none;
+    color: #c7d5eb;
+    text-decoration: underline;
     margin-right: 10px;
     text-align: center;
     font-size: 35px;
@@ -37,7 +37,7 @@ html {
 }
 /*pseudo code for contact page link*/
 #link::before{
-    color: black;
+    color: #c7d5eb;
     text-decoration: none;
     margin-right: 10px;
     text-align: center;
@@ -220,7 +220,9 @@ img.icons#insta {
 
 p {
     font-family: iconsolate, monospace;
+    text-align: left;
 }
+
 
 
 img.icons {
@@ -257,9 +259,13 @@ img.icons {
     flex-direction: row;
     margin: 0%;
     width: 100%;
+    font-family: monospace;
 }
 
-.container .row {
+ .container .heading {
+    font-weight: 300;
+}
+.container .row h1 {
     position: relative;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -281,3 +287,54 @@ img.icons {
     border-style:dotted;
 }
 
+
+/*about page styling*/
+
+.container .col-sm #about {
+    position: relative;
+    flex-wrap: wrap;
+    left: 5px;
+    padding: 20px;
+    text-align: center;
+}
+/*profile image on about me page*/
+.me {
+    max-width: 50%;
+    height: 300px;
+    max-height: 100%;
+    margin: 20px;
+    padding: 5px;
+    border: #c7d5eb;
+    border-style: dotted;
+    border-radius: 50%;
+}
+
+
+.container .col-sm #heading {
+    font-size: 30px;
+    position: relative;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+/* history page styling */
+
+.container h1 .history {
+    font-family: inconsolata monospace;
+}
+
+.container .history {
+    font-weight: 300;
+}
+
+.container .competencies {
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+    background-color: rgba(0,0,0,.5);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100%;
+    padding: 20px;
+    border-style: dotted;
+}
