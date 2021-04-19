@@ -1,1 +1,3 @@
 [submodule "image"]
+	path="/training/img/"
+	url = https://github.com/snehabhamra/portfolio/tree/img
