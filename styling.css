@@ -1,0 +1,283 @@
+/*Background image*/
+html {
+    background: url(/training/sunset.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/*Format for positioning elements on home page */
+.slogan {
+    margin-top: 160px;
+    text-align: center;
+    background: clear;
+}
+
+/*styling for homepage slogan*/
+#phrase {
+    font-size: 35px;
+    font-family:Inconsolata, monospace ;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+}
+
+
+/*added a contact page link as part of slogan - lets connect*/
+#link {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family:Inconsolata,monospace ;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: 100%;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0;
+}
+/*pseudo code for contact page link*/
+#link::before{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family:Inconsolata,monospace ;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0;
+    src: url(https://fonts.gstatic.com/s/inconsolata/v21/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4U8WRL2kXWdycuJDETf.woff) format('woff');
+}
+#link:hover {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 45px;
+    font-family:Inconsolata,monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*navbar styling*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,.2);
+    color: black;
+}
+
+.navbar-links ul {
+    padding:0;
+    margin: 2rem, 2rem;
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    font-family: inconsolata, monospace;
+    font-size: 25px;
+}
+
+.navbar-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    background-color: rgba(0,0,0,.2);
+    width: 18rem;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.navbar-links li:hover {
+    background-color: #211b4385;
+    transform: scale(1);
+    transition: all ease 2s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+} 
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*mobile friendly syntax for navbar*/
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        max-width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+    
+    .navbar-links li a {
+        padding: .5rem 1rem;
+        margin: 0rem;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .header {
+        display: block;
+        float: none;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    .header-list ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-list li {
+        text-align: center;
+    }
+
+    .header-list li a {
+        padding: .5rem 1rem;
+    }
+}   
+
+/*footer style elements*/
+footer {
+    background-color: rgba(0,0,0,.2);   
+    position: fixed; 
+    width: 100%;
+    text-align: left;
+    font-family: inconsolata monospace;
+    font-size: 20px;
+    bottom: 0;
+    color: grey;
+    justify-content:flex-end;
+    bottom: 0;
+    left: 5px;
+}
+
+/*styling for bottom right social icons*/
+
+img.icons {
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+
+}
+
+/*same as above*/
+img.icons#insta {
+    bottom: 5px;
+    right: 45px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+p {
+    font-family: iconsolate, monospace;
+}
+
+
+img.icons {
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+/*contact page syntax for webform styling*/
+
+.container {
+    width: 500px;
+    border-spacing: 7rem;
+    left: 0;
+    font-family: inconsolata monospace;
+    font-size: 15px;
+    word-spacing: 3px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flexbox;
+    margin: 0%;
+    color: #c7d5eb;
+}
+
+/*blog page styling here*/
+ .container {
+    position: relative;
+    flex-wrap: wrap;
+    display: flexbox;
+    flex-direction: row;
+    margin: 0%;
+    width: 100%;
+}
+
+.container .row {
+    position: relative;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: flexbox;
+}
+
+.container .row .col-sm {
+    padding-top: 50px;
+    text-align: left;
+    margin: 0%;
+    margin-left: 5px;
+}
+
+.blogimages {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    border: #c7d5eb;
+    border-style:dotted;
+}
+
