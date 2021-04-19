@@ -1,6 +1,6 @@
 /*Background image*/
 html {
-    background: url(img/sunset.jpg) no-repeat center center fixed;
+    background: url(/training/sunset.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
